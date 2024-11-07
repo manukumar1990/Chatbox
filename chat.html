@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chat.css">
+  </head>
+  <body>
+    <video id="video"></video>
+    <!-- <p>https://codepen.io/vikas-parashar/details/zYZXrVq</p> -->
+    <div class="chat-container">
+      <div class="chat-container-body d-flex overflow-hidden">
+        <div class="chatbody-container-grid w-100 flex-shrink-0 d-flex flex-wrap">
+          <div class="tab-content w-100 parent-tabcontent">
+            <div id="chattabs" class="tab-pane active w-100">
+              <div class="w-100 d-flex chattabs-container-row overflow-hidden">
+                <div class="w-100 flex-shrink-0 flex-wrap chattabs-container-grid">
+                  <div class="braodcast-chat-header w-100 bg-white">
+                    <h2 class="braodcast-title">Chats</h2>
+                    <div class="w-100 braodcast-chat-search">
+                      <form class="d-flex align-items-center braodcast-form w-100">
+                        <button class="btn  m-0 p-0" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <input type="text" value="" name="name" placeholder="Serch" class="form-control">
+                      </form>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between braodcast-header-links">
+                      <a href="javascript:void(0)" class="broadcast-list-link">Broadcast List</a>
+                      <a href="javascript:void(0)" class="broadcast-newgroup-link">New Group</a>
+                    </div>
+                  </div>
+                  <!-- braodcast-chat-header -->
+                  <div class=" w-100 braodcast-user-cotainer d-flex flex-wrap">
+                    <div class="braodcast-user-list flex-shrink-0">
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://www.g20.org/wp-content/uploads/2021/01/people.jpg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">David marshel</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">major relief ar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://api.time.com/wp-content/uploads/2014/05/166259035.jpg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Michel david</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">In a major relief to Aryan Khan, the Narcotics Control Bureau (NCB) said on Sunday that it won't seek further custody of superstar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://image.shutterstock.com/image-photo/stock-photo-happy-young-indian-woman-blogger-applicant-teacher-sit-at-home-office-look-at-camera-doing-online-250nw-1606121245.jpg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Eathon michel</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes"> (NCB) said on Sunday that it won't seek further custody of superstar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2017-09/shutterstock_243101992.jpg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Subhash  bhagat</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">In a major relie Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://assets.entrepreneur.com/content/3x2/2000/20150820205507-single-man-outdoors-happy-bliss.jpeg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Suraj Kumar</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">major relief ar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Ankit marshel</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">major relief ar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/shutterstock_105623048_1.jpg?itok=IcdHbI7U" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Michel david</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">In a major relief to Aryan Khan, the Narcotics Control Bureau (NCB) said on Sunday that it won't seek further custody of superstar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://d187goyob322lh.cloudfront.net/Pictures/480xAny/0/6/4/7064_Church_failing.png" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Eathon michel</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes"> (NCB) said on Sunday that it won't seek further custody of superstar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://www.nexxt.com/data/articles/images/work-life-balance/singlepeople.jpg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Manoranjan Kumar bhagat</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">In a major relie Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                      <div class="w-100 d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-specific-chat">
+                        <div class="d-flex align-items-start">
+                          <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-06.jpg" alt="" class="w-100" id="profileImg"></figure>
+                          <h2 class="braodcast-user-message">
+                            <span class="user-profile-name">Suraj Kumar</span>
+                            <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-check" aria-hidden="true"></i></small>
+                              <span class="last-quotes">major relief ar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</span>
+                            </p>
+                          </h2>
+                        </div>
+                        <span class="message-time position-static"> 11:02 AM</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="phonetabs" class="tab-pane fade w-100">
+              <div class="braodcast-chat-header w-100 bg-white">
+                <h2 class="braodcast-title">Calls</h2>
+                <div class="w-100 braodcast-chat-search">
+                  <form class="d-flex align-items-center braodcast-form w-100">
+                    <button class="btn  m-0 p-0" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input type="text" value="" name="name" placeholder="Serch" class="form-control">
+                  </form>
+                </div>
+              </div>
+              <div class=" w-100 braodcast-usercall-cotainer d-flex flex-wrap">
+                <div class="braodcast-user-list flex-shrink-0">
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-video-camera" aria-hidden="true"></i></small>
+                           <span class="last-quotes">Outgoing</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/shutterstock_105623048_1.jpg?itok=IcdHbI7U" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Michel david</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-phone" aria-hidden="true"></i></small>
+                          <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://d187goyob322lh.cloudfront.net/Pictures/480xAny/0/6/4/7064_Church_failing.png" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Eathon michel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-phone" aria-hidden="true"></i></small>
+                          <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://www.nexxt.com/data/articles/images/work-life-balance/singlepeople.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Subhash  bhagat</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-phone" aria-hidden="true"></i></small>
+                          <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://assets.entrepreneur.com/content/3x2/2000/20150820205507-single-man-outdoors-happy-bliss.jpeg" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Suraj Kumar</span>
+                         <p class="d-flex align-items-center broadcast-userchat-text"><small class="not-seen"><i class="fa fa-phone" aria-hidden="true"></i></small>
+                          <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Ankit marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-video-camera" aria-hidden="true"></i></small>
+                           <span class="last-quotes">Outgoing</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/shutterstock_105623048_1.jpg?itok=IcdHbI7U" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Michel david</span>
+                       <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-video-camera" aria-hidden="true"></i></small>
+                           <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://d187goyob322lh.cloudfront.net/Pictures/480xAny/0/6/4/7064_Church_failing.png" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Eathon michel</span>
+                         <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-video-camera" aria-hidden="true"></i></small>
+                           <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://www.nexxt.com/data/articles/images/work-life-balance/singlepeople.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <div class="d-flex align-items-center braodcast-callType">
+                          <i class="fa fa-video-camera" aria-hidden="true"></i>
+                          <span class="braodcast-callType">Outgoing</span>
+                        </div>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://assets.entrepreneur.com/content/3x2/2000/20150820205507-single-man-outdoors-happy-bliss.jpeg" alt="" class="w-100" id="profileImg"></figure>
+                      <h2 class="braodcast-user-message">
+                        <span class="user-profile-name">Suraj Kumar</span>
+                         <p class="d-flex align-items-center broadcast-userchat-text"><small class="seen-message"><i class="fa fa-video-camera" aria-hidden="true"></i></small>
+                           <span class="last-quotes">Incoming</span>
+                        </p>
+                      </h2>
+                    </div>
+                    <div class="braodcast-History d-flex align-items-center">
+                      <span class="message-time position-static"> 11:02 AM</span>
+                      <button type="button" class="btn  call-info"><i class="fa fa-info" aria-hidden="true"></i></button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="statustabs" class="tab-pane fade w-100">
+              <div class="braodcast-chat-header w-100">
+                <h2 class="braodcast-title">Status</h2>
+                <div class="w-100 braodcast-chat-search">
+                  <form class="d-flex align-items-center braodcast-form w-100">
+                    <button class="btn  m-0 p-0" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input type="text" value="" name="name" placeholder="Serch" class="form-control">
+                  </form>
+                </div>
+              </div>
+              <!-- braodcast-chat-header -->
+              <div class=" w-100 braodcast-usercall-cotainer d-flex flex-wrap">
+                <div class="braodcast-user-list flex-shrink-0">
+                  <div class="d-flex align-items-center justify-content-between position-relative braodcast-user braodcast-user-stauts">
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex user-figure-icon position-relative flex-shrink-0">
+                        <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      </div>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">My Status</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="last-quotes">Add to my status</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-shrink-0 align-items-start media-icon-column">
+                      <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="w-100 recent-update-title"><span>RECENT UPDATES</span></div>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://d187goyob322lh.cloudfront.net/Pictures/480xAny/0/6/4/7064_Church_failing.png" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">Eathon michel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/shutterstock_105623048_1.jpg?itok=IcdHbI7U" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://www.nexxt.com/data/articles/images/work-life-balance/singlepeople.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">Subhash  bhagat</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://assets.entrepreneur.com/content/3x2/2000/20150820205507-single-man-outdoors-happy-bliss.jpeg" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">Ankit marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://d187goyob322lh.cloudfront.net/Pictures/480xAny/0/6/4/7064_Church_failing.png" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="w-100 recent-update-title"><span>VIEW UPDATES</span></div>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://d187goyob322lh.cloudfront.net/Pictures/480xAny/0/6/4/7064_Church_failing.png" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">Michel david</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/shutterstock_105623048_1.jpg?itok=IcdHbI7U" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">Eathon michel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://www.nexxt.com/data/articles/images/work-life-balance/singlepeople.jpg" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">David marshel</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)" class="d-flex align-items-start justify-content-between position-relative braodcast-user braodcast-user-update">
+                    <div class="d-flex align-items-start">
+                      <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://assets.entrepreneur.com/content/3x2/2000/20150820205507-single-man-outdoors-happy-bliss.jpeg" alt="" class="w-100" id="profileImg"></figure>
+                      <div class="braodcast-user-message">
+                        <span class="user-profile-name">Suraj Kumar</span>
+                        <p class="d-flex align-items-center broadcast-userchat-text">
+                          <span class="message-time position-static text-left"> 11:02 AM</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="settingtabs" class="tab-pane fade w-100">
+              <div class="d-flex w-100 settingtabs-container overflow-hidden">
+                <div class="w-100 flex-shrink-0 settingtabs-wrapper">
+                  <div class="braodcast-chat-header w-100">
+                    <h2 class="braodcast-title">Setting</h2>
+                  </div>
+                  <div class="w-100 setting-list-container">
+                    <div class="d-flex align-items-center justify-content-between position-relative braodcast-user braodcast-user-setting">
+                      <div class="d-flex align-items-center">
+                        <figure class="user-figure m-0 flex-shrink-0 m-0 p-0"><img src="https://static.toiimg.com/thumb/msid-69707516,imgsize-202568,width-400,resizemode-4/69707516.jpg" alt="" class="w-100" id="profileImg"></figure>
+                        <div class="braodcast-user-message">
+                          <span class="user-profile-name">Mano</span>
+                          <p class="d-flex align-items-center broadcast-userchat-text">
+                            <span class="last-quotes">Har Har mahadev</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-shrink-0 align-items-start media-icon-column">
+                        <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button">
+                        <i class="fa fa-qrcode" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <ul class="nav nav-tabs w-100 setting-tabs-list flex-wrap" role="tablist">
+                      <li>
+                        <a class="w-100 d-flex align-items-center justify-content-start  setting-name-row" data-toggle="tab" href="#StarredMessage">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name">
+                              Starred Message
+                            </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#LinkedDevices">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-desktop" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name">  Linked Devices</div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#AccountSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Account </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#PaymentsSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Payments </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#ChatSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Chats </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#NotificationSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Notifications </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#DataSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Storage and Data </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#HelpSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-info" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Help </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="d-flex align-items-center justify-content-between setting-name-row" data-toggle="tab" href="#FriendSetting">
+                          <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                          </div>
+                          <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                            <div class="setting-name"> Tell a friend </div>
+                            <div class="d-flex align-items-center flex-shrink-0 setting-info-column"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- settingtabs-wrapper -->
+                <div class="w-100 flex-shrink-0 settingtabs-wrapper">
+                  <div class="tab-content w-100">
+                    <div id="StarredMessage" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">  Starred Message</h2>
+                      </div>
+                    </div>
+                    <div id="LinkedDevices" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0"> Linked Devices</h2>
+                      </div>
+                    </div>
+                    <div id="AccountSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">  Account</h2>
+                      </div>
+                    </div>
+                    <div id="PaymentsSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">  Payments</h2>
+                      </div>
+                    </div>
+                    <div id="ChatSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">  Chats</h2>
+                      </div>
+                    </div>
+                    <div id="NotificationSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">  Notifications</h2>
+                      </div>
+                    </div>
+                    <div id="DataSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">  Storage and Data</h2>
+                      </div>
+                    </div>
+                    <div id="HelpSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">   Help</h2>
+                      </div>
+                    </div>
+                    <div id="FriendSetting" class="tab-pane fade w-100">
+                      <div class="d-flex align-items-center setting-back-header w-100">
+                        <button type="button" class="btn d-flex align-items-center justify-content-center back-setting">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Setting</span>
+                        </button>
+                        <h2 class="setting-back-title m-0">Tell a friend</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- settingtabs-container -->
+              </div>
+            </div>
+          </div>
+          <ul class="nav nav-tabs align-self-end" role="tablist">
+            <li>
+              <a data-toggle="tab" href="#statustabs"><i class="fa fa-venus-mars" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#phonetabs"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#" onclick="cameraOn()"><i class="fa fa-camera" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a class="active" data-toggle="tab" href="#chattabs"><i class="fa fa-comments" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a data-toggle="tab" href="#settingtabs"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- chatbody-container-grid -->
+        <div class="chatbody-container-grid w-100 flex-shrink-0">
+          <div class="chat-header d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-default back-arrow flex-shrink-0"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+              <div class="d-flex align-items-center all-profiile-details">
+                <form class="prifile-image">
+                  <figure class="user-figure m-0 flex-shrink-0">
+                    <img src="images/user.jpg" alt="" class="w-100" id="profileImg">
+                  </figure>
+                </form>
+                <h2 class="m-0 chat-name"><span class="user-profile-name">Manoranjan Kumar bhagat</span><span id="typing-text" class="m-0 d-block"></span></h2>
+              </div>
+            </div>
+            <div class="d-flex align-items-center header-right-column flex-shrink-0">
+              <div class="media-chat-option d-flex flex-shrink-0">
+                <button type="button" class="btn btn-default phone-calling flex-shrink-0 d-flex align-items-center justify-content-center"><i class="fa fa-phone" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-default video-calling flex-shrink-0 d-flex align-items-center justify-content-center"><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+              </div>
+              <div class="dropdown flex-shrink-0 d-flex">
+                <button type="button" class="btn btn-default chat-nav" data-toggle="dropdown">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu userprofile-dropdown dropdown-menu-right">
+                  <ul class="m-0 p-0">
+                    <li><a href="#" class="d-flex align-items-center"><i class="fa fa-signal" aria-hidden="true"></i> <span>New broadcast</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><i class="fa fa-link" aria-hidden="true"></i><span> Linked devices</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>Starred message</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><i class="fa fa-credit-card" aria-hidden="true"></i><span> Payments</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><i class="fa fa-cogs" aria-hidden="true"></i><span>Setting</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- chat-header -->
+          <form class="chat-form" id="chatForm">
+            <div class="chat-history-container col-12 d-flex flex-wrap">
+            </div>
+          </form>
+          <div class="chating-row d-flex col-12">
+            <div class="chat-file flex-shrink-0 d-flex align-items-center">
+              <input type="file" name="files" id="uploadChatFile" multiple="">
+              <label for="uploadChatFile"><i class="fa fa-paperclip" aria-hidden="true"></i></label>
+            </div>
+            
+              <input type="text" placeholder="Message..." class="form-control typing-input" id="typing-input" name="name">
+              
+          
+
+            <div class="d-flex align-items-center flex-shrink-0 position-relative chating-row-media-column">
+              <button type="button" class="btn btn-default send-message" onclick="myMessage()"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+               <div class="d-flex flex-shrink-0 align-items-center media-icon-column">
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button">
+                <i class="fa fa-camera" aria-hidden="true"></i>
+                </button>
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+                
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+        <!-- chatbody-container-grid -->
+        <div class="chatbody-container-grid w-100 flex-shrink-0">
+          <div class="w-100 d-flex align-items-center justify-content-between timeline-contact-info">
+            <button type="button" class="btn d-flex align-items-center justify-content-center timeline-back-contact">
+            <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="timeline-back-name"></span>
+            </button>
+            <h2 class="timeline-contact-title m-0">Contact Info</h2>
+            <a href="javascript:void(0)" class="timeline-contact-edit">Edit</a>
+          </div>
+          <div class="w-100 timeline-profile-container">
+            <div class="w-100 timeline-profile-figure">
+            </div>
+            <div class="w-100 d-flex justify-content-between align-items-center timeline-user-details-row">
+              <div class="timeline-user-details">
+                <h5 class="timeline-user-name"></h5>
+                <span class="timeline-number">+91-9650258282</span>
+              </div>
+              <div class="d-flex flex-shrink-0 align-items-start media-icon-column">
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                </button>
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button"><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button"><i class="fa fa-phone" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="w-100 d-flex justify-content-between align-items-center timeline-status">
+              <div class="timeline-status-change-detail">
+                <p class="timeline-status-text"> (NCB) said on Sunday that it won't seek further custody of superstar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</p>
+                <p class="timeline-status-date">
+                  7 sep 2020
+                </p>
+              </div>
+            </div>
+            <div class="w-100 d-flex justify-content-between align-items-start">
+              <ul class="nav nav-tabs w-100 setting-tabs-list flex-wrap">
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                      <i class="fa fa-image" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Media, links, and Docs
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">50</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-yellow">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper ">
+                      <div class="setting-name">
+                        Started Message
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">None</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-orange">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Chat Search
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-green">
+                      <i class="fa fa-volume-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Mute
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">No</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-pink">
+                      <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Wallpaper and sound
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-yellow">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Save to Camera Roll
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">Default</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                      <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">Disappearing Message
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">Off</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Encryption
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-gray">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Contact Details
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name link-color">Share Contact</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name link-color">Export Chart</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name danger-color">Clear Chat</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name danger-color">Block Contact</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name danger-color">Report Contact</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="chatbody-container-grid w-100 flex-shrink-0">
+          <div class="w-100 d-flex align-items-center justify-content-between timeline-contact-info">
+            <button type="button" class="btn d-flex align-items-center justify-content-center calls-back-button">
+            <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="">Calls</span>
+            </button>
+            <h2 class="timeline-contact-title m-0">Contact Info</h2>
+            <a href="javascript:void(0)" class="timeline-contact-edit">Edit</a>
+          </div>
+
+
+
+          <div class="w-100 timeline-profile-container callhistory-detail-container">
+            <div class="w-100 d-flex justify-content-between align-items-center timeline-user-details-row">
+              <div class="timeline-user-details ">
+                <h5 class="timeline-user-name callhistory-timeline-user-name"></h5>
+                <span class="timeline-number">+91-9650258282</span>
+              </div>
+              <div class="d-flex flex-shrink-0 align-items-start media-icon-column">
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                </button>
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button"><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+                <button class="btn d-flex align-items-center justify-content-center flex-shrink-0 media-icon" type="button"><i class="fa fa-phone" aria-hidden="true"></i></button>
+              </div>
+            </div>
+
+            <div class="w-100 d-flex justify-content-between align-items-center timeline-status">
+              <div class="timeline-status-change-detail">
+                <p class="timeline-status-text"> (NCB) said on Sunday that it won't seek further custody of superstar Shah Rukh Khan's son in connection with the Cordelia cruise drugs case.</p>
+                <p class="timeline-status-date">
+                  7 sep 2020
+                </p>
+              </div>
+            </div>
+            <div class="w-100 d-flex justify-content-between align-items-start">
+              <ul class="nav nav-tabs w-100 setting-tabs-list flex-wrap">
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                      <i class="fa fa-image" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Media, links, and Docs
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">50</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-yellow">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper ">
+                      <div class="setting-name">
+                        Started Message
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">None</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-orange">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Chat Search
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-green">
+                      <i class="fa fa-volume-up" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Mute
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">No</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-pink">
+                      <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Wallpaper and sound
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-yellow">
+                      <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Save to Camera Roll
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">Default</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                      <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">Disappearing Message
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <span class="setting-info-text">Off</span>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Encryption
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center justify-content-center setting-tab-icon flex-shrink-0 tab-icon-gray">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name">
+                        Contact Details
+                      </div>
+                      <div class="d-flex align-items-center flex-shrink-0 setting-info-column">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name link-color">Share Contact</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name link-color">Export Chart</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name danger-color">Clear Chat</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name danger-color">Block Contact</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="w-100 d-flex justify-content-between align-items-start">
+                    <div class="w-100 d-flex align-items-center justify-content-between setting-name-wrapper">
+                      <div class="setting-name danger-color">Report Contact</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+           
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+      <!-- chat-container-body -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      const replayMessages = [
+        "Hey! <br> How are You",
+        "Good <br> What is your full Name",
+        "Ok <br> How can i help you",
+        " Sorry for issues <br> I will fully support for help",
+        " What is your Email ID",
+        " What is your contact number",  
+        " Any other help sir at my end?",
+        " Thanks for Details <br> My support Team Connecting soon! ",
+        " Thanks! "
+      ];
+      
+      
+      
+      let replayLength= replayMessages.length;
+      
+      let i = 0;
+      
+      
+      
+         
+         $(".typing-input").keyup(function(enterkey){   
+      
+         let date = new Date()
+         let CurrentHours = date.getHours();
+         let CurrentMinutes = date.getMinutes();
+         let chatMessageTime = date.toLocaleString('en-US', { hour: 'numeric', minute:'numeric', hour12: true })   
+      
+         
+         let typingInputValue = document.getElementById("typing-input").value;
+         
+         var convertStringText = typingInputValue.replace(/<\/?[^>]+>/gi, " ");
+          
+         var textLength = convertStringText.length;
+         
+      
+         let myFigure = $(".user-figure img").attr("src")
+         
+          if( convertStringText !== ""){
+            document.getElementById("typing-text").innerHTML = "typing...."
+          }else{
+            document.getElementById("typing-text").innerHTML = ""
+          }
+      
+          
+          if(enterkey.keyCode == 13 && convertStringText !== "" ){
+      
+            
+            let replayText = '<div class="myChatRow replayCharRow"><figure class="user-figure"><img src="telecaller.png" class="w-100" alt=""></figure> <div class="myChatText"><span class="message-time"> '+ chatMessageTime +'</span><p class="position-relative m-0">'+ replayMessages[i] +' </p> </div> </div>';
+      
+      
+              let profileMessageImg = $(".prifile-image").find("img").attr("src");
+      
+      
+      
+            
+                
+            let myChatHtml = '<div class="myChatRow userReplayChatRow"><figure class="user-figure"><img src='+ profileMessageImg +' class="w-100"></figure><div class="myChatText"><span class="message-time"> '+ chatMessageTime +'</span><p class="position-relative m-0">'+ convertStringText +' </p></div></div>';
+         
+            $(".chat-history-container").append(myChatHtml);
+         
+            document.getElementById("typing-input").value = "";
+            document.getElementById("typing-text").innerHTML = "";
+            $('.chat-history-container').animate({ scrollTop: $('.chat-history-container').prop('scrollHeight')}, 0)
+      
+            setTimeout(function(){ $(".chat-history-container").append(replayText) 
+            $('.chat-history-container').animate({ scrollTop: $('.chat-history-container').prop('scrollHeight')}, 0)
+          }, 1000);
+      
+      
+          i += + 1;
+      
+          if(replayLength <= i){
+             i = 0;
+          }
+      
+              
+          }
+         
+      
+      
+         })
+         
+      
+          
+         
+         function myMessage(){ 
+      
+      
+         let date = new Date()
+         let CurrentHours = date.getHours();
+         let CurrentMinutes = date.getMinutes();
+         let chatMessageTime = date.toLocaleString('en-US', { hour: 'numeric', minute:'numeric', hour12: true }) 
+      
+      
+         
+      let myFigure = $(".user-figure img").attr("src");
+      let typingInputValue = document.getElementById("typing-input").value; 
+      var convertStringText = typingInputValue.replace(/<\/?[^>]+>/gi, " ");
+      
+        let replayText = '<div class="myChatRow replayCharRow"><figure class="user-figure"><img src="images/telecaller.png" class="w-100" alt=""></figure> <div class="myChatText"><span class="message-time"> '+ chatMessageTime +'</span><p class="position-relative m-0">'+ replayMessages[i] +' </p> </div> </div>';
+      
+      
+      
+         
+         
+         if( convertStringText !== ""){
+      
+      
+      
+           let profileMessageImg = $(".prifile-image").find("img").attr("src");
+      
+      
+      
+      
+      
+            let myChatHtml = '<div class="myChatRow userReplayChatRow"><figure class="user-figure"><img src='+ profileMessageImg +' class="w-100"></figure><div class="myChatText"><span class="message-time"> '+ chatMessageTime +'</span><p class="position-relative m-0">'+ convertStringText +' </p></div></div>';
+         
+          $(".chat-history-container").append(myChatHtml);
+      
+          document.getElementById("typing-input").value = "";
+          document.getElementById("typing-text").innerHTML = ""
+      
+          $('.chat-history-container').animate({ scrollTop: $('.chat-history-container').prop('scrollHeight')}, 0)
+      
+          setTimeout(function(){ $(".chat-history-container").append(replayText) 
+          $('.chat-history-container').animate({ scrollTop: $('.chat-history-container').prop('scrollHeight')}, 0)
+          }, 200);
+      
+      
+          i += + 1;
+      
+          if(replayLength <= i){
+             i = 0;
+             }
+      
+      
+          }
+             
+           $("#typing-input").focus()
+         }
+      
+
+      $("#typing-input").keyup(function(){
+        var messageType = $(this).val();
+        let messageTypeLength =  messageType.length;
+
+        if(messageTypeLength > 0){
+          $(".chating-row").addClass("active-keyup")
+        }else{
+          $(".chating-row").removeClass("active-keyup")
+        }
+
+
+      })
+      
+      
+      $('#uploadChatFile').on('change', function(e) {
+              let myFigure = $(".user-figure img").attr("src")
+              if (this.files && this.files.length > 0) {
+            
+            
+                  let fileName = Array.from(this.files).map(({name}) => name);      
+                  let fileLength = fileName.length;
+                  let lengText = fileLength - 4;
+      
+              
+      
+      
+                  if(fileLength >4 ){
+      
+                      let myChatFile ='<div class="myChatRow position-relative uploaded-figure-row"> <div class="uploaded-figure-column position-relative"><span class="message-time"> '+ chatMessageTime +'</span><figure class="user-figure"><img src='+ myFigure +' class="w-100"></figure> <div class="myChatFigures"> ';
+            
+                  for(let i=0; i<fileLength; i++){      
+                      myChatFile += '<figure class="chat-figure m-0"><img src=images/'+ fileName[i] +' alt="" class="w-100"></figure>';           
+                  }      
+                  myChatFile += '</div></div></div>';
+      
+      
+            
+                  $(".chat-history-container").append(myChatFile); 
+                  $(".chat-figure").addClass("more-chat-figure");
+                  $(".myChatFigures").append('<span class="imgLength">' +"+"+lengText+' </span>');
+      
+      
+      
+                  }else{
+      
+                      let myChatFile ='<div class="myChatRow position-relative uploaded-figure-row"> <div class="uploaded-figure-column position-relative"><span class="message-time"> '+ chatMessageTime +'</span><figure class="user-figure"><img src='+ myFigure +' class="w-100"></figure> <div class="myChatFigures"> ';
+            
+                  for(let i=0; i<fileLength; i++){      
+                      myChatFile += '<figure class="chat-figure m-0"><img src=images/'+ fileName[i] +' alt="" class="w-100"></figure>';           
+                  }      
+                  myChatFile += '</div></div></div>';
+      
+      
+            
+                  $(".chat-history-container").append(myChatFile); 
+                  }
+                    
+                  $('.chat-history-container').animate({ scrollTop: $('.chat-history-container').prop('scrollHeight')}, 0)           
+              }
+                 
+            })
+      
+      
+      
+      
+        
+         $(document).ready(function(){
+              
+         
+         $(".scroll-top").on("click", function() {
+            $(".chat-history-container").scrollTop(0);
+         });
+         
+      
+      
+         $("#profileImageInput").on("change",function(){
+      
+          let fffsfs = $(this).val()
+      
+          console.log(fffsfs)
+      
+         })
+      
+      
+      
+           
+         })
+      
+      $(".setting-name-row").click(function(){
+      $(".settingtabs-container").addClass("active")
+      })
+      
+      $(".back-setting").click(function(){
+      $(".settingtabs-container").removeClass("active")
+      })
+         
+      
+      
+      
+      function cameraOn() {
+      
+      $("#video").addClass("active-video")
+      
+      var video = document.getElementById('video');
+      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+         navigator.mediaDevices.getUserMedia({
+             video: true
+         }).then(function(stream) {
+             video.srcObject = stream;
+             video.play();
+         });
+      }
+      }
+       
+      
+      
+      
+      
+      
+      
+      
+      $(".braodcast-user-specific-chat").click(function(){
+        $(this).parents(".chat-container-body").addClass("active")
+        let braodcastUserImg = $(this).find("img").attr("src");
+        let userProfileName =  $(this).find(".user-profile-name").text()
+        $(".prifile-image img, .userReplayChatRow .user-figure img").attr("src",braodcastUserImg)
+        $(".chat-header .user-profile-name").text(userProfileName);
+
+      })
+      
+      $(".all-profiile-details").click(function(){
+      
+        $(this).parents(".chat-container-body").addClass("active-timeline")
+        let timelineFigure =  $(this).find("img").attr("src");
+        $(".timeline-profile-figure").css({'background-image':'url('+timelineFigure+')'})
+        let timelineUserName =  $(this).find(".user-profile-name").text()
+        $(".timeline-user-name,.timeline-back-name").text(timelineUserName)
+      
+      })
+      
+      $(".timeline-back-contact").click(function(){
+      
+        $(".chat-container-body").removeClass("active-timeline")
+        
+      
+      })
+      
+      
+      
+      $(".back-arrow").click(function(){
+      $(this).parents(".chat-container-body").removeClass("active")
+      })
+      
+       $(".call-info").click(function(){
+          $(this).parents(".chat-container-body").addClass("active-call-history");
+
+          let callHistoryUserName = $(this).parents(".braodcast-user").find(".user-profile-name").text();
+          console.log(callHistoryUserName)
+          $(".callhistory-timeline-user-name").text(callHistoryUserName)
+
+
+
+
+
+        })
+
+       $(".calls-back-button").click(function(){
+          $(".chat-container-body").removeClass("active-call-history")
+        })
+
+      
+      
+      
+      //  $(".braodcast-user-specific-chat").click(function(){ timeline-user-name
+      //      $(this).parents(".chat-container-body").addClass("active")
+      //      let braodcastUserImg = $(this).find("img").attr("src");
+      //      let userProfileName =  $(this).find(".user-profile-name").text()
+      //      $(".prifile-image img, .userReplayChatRow .user-figure img").attr("src",braodcastUserImg)
+      //      $(".chat-header .user-profile-name").text(userProfileName)  
+      //   })
+      
+    </script>
+  </body>
+</html>
